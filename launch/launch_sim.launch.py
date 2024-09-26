@@ -25,6 +25,8 @@ def generate_launch_description():
                 )]), launch_arguments={'use_sim_time': 'true'}.items()
     )
 
+
+
     # Include the Gazebo launch file, provided by the gazebo_ros package
     gazebo = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
@@ -39,9 +41,11 @@ def generate_launch_description():
 
 
 
+
     # Launch them all!
     return LaunchDescription([
         rsp,
         gazebo,
         spawn_entity,
+
     ])
