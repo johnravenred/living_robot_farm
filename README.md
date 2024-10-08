@@ -9,11 +9,13 @@ https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setu
 After installing ROS2 Humble, you'll need to clone this repo to your workspace /ros2_humble is your workspace if you follow the installation:
 
 `$ cd ros_humble/src `
+
 `$ git clone git@github.com:johnravenred/living_robot_farm.git`
 
 return to your workspace file:
 
 `$ cd ..`
+
 `$ colcon build --symlink-install`
 
 then to run the virtual robot:
