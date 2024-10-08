@@ -1,7 +1,20 @@
-## Robot Package Template
+This repo is a virtual robot of Living_lab_robot. 
 
-This is a GitHub template. You can make your own copy by clicking the green "Use this template" button.
+To clone this repo you'll need a ROS2 Humble
 
-It is recommended that you keep the repo/package name the same, but if you do change it, ensure you do a "Find all" using your IDE (or the built-in GitHub IDE by hitting the `.` key) and rename all instances of `living_robot_farm` to whatever your project's name is.
+To install ROS2 Humble in Ubuntu dist. follow these steps from this website:
+https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setup.html
 
-Note that each directory currently has at least one file in it to ensure that git tracks the files (and, consequently, that a fresh clone has direcctories present for CMake to find). These example files can be removed if required (and the directories can be removed if `CMakeLists.txt` is adjusted accordingly).
+After installing ROS2 Humble, you'll need to clone this repo to your workspace /ros2_humble is your workspace if you follow the installation 
+$ cd ros_humble/src 
+$ git clone git@github.com:johnravenred/living_robot_farm.git
+
+return to your workspace file
+$ cd ..
+$ colcon build --symlink-install
+
+then to run the virtual robot
+$ ros2 launch living_robot_farm launch_sim.launch1.py
+
+to move the robot you'll need to run teleop operation
+$ ros2 run teleop_twist_keyboard teleop_twist_keyboard
