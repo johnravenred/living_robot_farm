@@ -18,3 +18,4 @@ $ ros2 launch living_robot_farm launch_sim.launch1.py
 
 to move the robot you'll need to run teleop operation
 $ ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
